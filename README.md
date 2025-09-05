@@ -9,12 +9,14 @@
 This project is a simple HTTPS forward proxy written in Python using `asyncio`. It demonstrates basic concepts of proxying, authentication, and TLS SNI inspection.
 
 ## Features
+
 - Handles HTTPS `CONNECT` requests
 - Domain and user authentication (basic auth)
 - SNI (Server Name Indication) validation for TLS connections
 - Customizable list of allowed domains and users
 
 ## Usage
+
 1. **Clone the repository**
 2. **Add SSL certificates**: Place your certificate and key in the `cert/` directory as `certificate.crt` and `private.key`.
 3. **Run with Python**:
@@ -28,16 +30,19 @@ This project is a simple HTTPS forward proxy written in Python using `asyncio`. 
    ```
 
 ## Configuration
+
 - Allowed domains and users are set in `main.py`.
 - Listens on port `8081` by default.
 
 ## Limitations & Warnings
+
 - **No security hardening**
 - **No logging, monitoring, or error handling for production**
 - **No support for HTTP requests (only HTTPS CONNECT)**
 - **Single-threaded, not optimized for performance**
 
 ## License
+
 MIT License
 
 ---
